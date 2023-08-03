@@ -17,7 +17,7 @@ class AskLocationScreen extends ConsumerWidget {
             "Localizacion Necesaria",
           ),
           onPressed: () {
-            final compass = ref.read(permissionsProvider.notifier).requestLocationAcess();
+            ref.read(permissionsProvider.notifier).requestLocationAcess();
           },
         ),
       ),

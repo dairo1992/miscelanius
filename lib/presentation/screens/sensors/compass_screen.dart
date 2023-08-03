@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math' show pi;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:miscelanius/presentation/providers/providers.dart';
 import 'package:miscelanius/presentation/screens/screens.dart';

@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
                     icon: const Icon(Icons.settings))
               ],
             ),
-            MainMenu()
+            const MainMenu()
           ],
         ),
       ),
