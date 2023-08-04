@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:miscelanius/presentation/config.dart';
-import 'package:wakelock/wakelock.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
+// import 'package:wakelock/wakelock.dart';
 
 import 'presentation/providers/providers.dart';
 
@@ -46,7 +47,8 @@ class MainAppState extends ConsumerState<MainApp> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    Wakelock.enable();
+    // Wakelock.enable();
+    WakelockPlus.enable();
     return MaterialApp.router(
         debugShowCheckedModeBanner: false,
         theme: AppTheme().getTheme(),
