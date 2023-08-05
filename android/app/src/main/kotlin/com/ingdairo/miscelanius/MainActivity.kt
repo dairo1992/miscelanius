@@ -1,4 +1,4 @@
-package com.ingdairo.website.miscelanius
+package com.ingdairo.miscelanius
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 
