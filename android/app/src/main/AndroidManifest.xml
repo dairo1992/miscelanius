@@ -20,6 +20,8 @@
     android:exported="false"
     android:grantUriPermissions="true"
   >
+  <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyCe3OcBs7019RFzFxacKZPbnhgboIf_G3A"/>
     <activity
       android:name=".MainActivity"
       android:exported="true"

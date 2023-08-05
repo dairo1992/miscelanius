@@ -8,20 +8,30 @@ class LocationScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, ref) {
     final locationAsync = ref.watch(userlocationProvider);
+    final tiempoRealLocationAsync = ref.watch(watchLocationProvider);
     return Scaffold(
       appBar: AppBar(
         title: const Text("Ubicacion"),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Text("Ubicacion actual"),
-          locationAsync.when(data: (data) => Text("$data"), error: (error, stackTrace) => Text("$error"), loading: ()=> CircularProgressIndicator.adaptive()),
-          const SizedBox(
-            height: 30,
-          ),
-          const Text("Seguimiento de ubicacion"),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text("Ubicacion actual"),
+            locationAsync.when(
+                data: (data) => Text("$data"),
+                error: (error, stackTrace) => Text("$error"),
+                loading: () => CircularProgressIndicator.adaptive()),
+            const SizedBox(
+              height: 30,
+            ),
+            const Text("Seguimiento de ubicacion"),
+            tiempoRealLocationAsync.when(
+                data: (data) => Text("$data"),
+                error: (error, stackTrace) => Text("$error"),
+                loading: () => CircularProgressIndicator.adaptive()),
+          ],
+        ),
       ),
     );
   }
