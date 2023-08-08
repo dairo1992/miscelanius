@@ -18,7 +18,7 @@ class ControlledMapScreen extends ConsumerWidget {
                 lat: data.$1,
                 lng: data.$2,
               ),
-          error: (error, _) => Text("$error"),
+          error: (error, _) => Center(child: Text("$error")),
           loading: () => const Center(
                 child: Text("Ubicando usuario"),
               )),

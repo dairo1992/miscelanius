@@ -9,6 +9,7 @@ import 'presentation/providers/providers.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  QuickActionsPlugins.registrarActions();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const ProviderScope(
     child: MainApp(),
