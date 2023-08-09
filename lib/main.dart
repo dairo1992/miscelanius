@@ -7,8 +7,9 @@ import 'package:wakelock_plus/wakelock_plus.dart';
 
 import 'presentation/providers/providers.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await AdsModPlugin.initialize();
   QuickActionsPlugins.registrarActions();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const ProviderScope(

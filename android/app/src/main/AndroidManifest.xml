@@ -20,8 +20,14 @@
     android:exported="false"
     android:grantUriPermissions="true"
   >
+  <!-- GOOGLE ADS -->
+  <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+  <meta-data
+  android:name="com.google.android.gms.ads.APPLICATION_ID"
+  android:value="ca-app-pub-2524336339004626~4242914290"/>
+  <!-- GOOGLE MAPS -->
   <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="AIzaSyCe3OcBs7019RFzFxacKZPbnhgboIf_G3A"/>
+               android:value="AIzaSyBNJd0HVwjXeN5knTyoLiopp4ro-cO4WcU"/>
     <activity
       android:name=".MainActivity"
       android:exported="true"
