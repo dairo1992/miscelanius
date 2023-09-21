@@ -5,23 +5,25 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 // ! replace this test ad unit with your own ad unit.
 final adBannerId = Platform.isAndroid
-     ? 'ca-app-pub-3940256099942544/6300978111'
-    // ? 'ca-app-pub-5396621013512775~8563939935' // CUENTA PERSONAL
+    //  ? 'ca-app-pub-3940256099942544/6300978111'  //PRUEBAS
+    ? 'ca-app-pub-5396621013512775/6045917683' // CUENTA PERSONAL
     : 'ca-app-pub-3940256099942544/2934735716';
 
 // TODO: replace this test ad unit with your own ad unit.
 final aDIntersticialId = Platform.isAndroid
-    ? 'ca-app-pub-3940256099942544/1033173712'
+    // ? 'ca-app-pub-3940256099942544/1033173712' //PRUEBAS
+    ? 'ca-app-pub-5396621013512775/3283528130'
     : 'ca-app-pub-3940256099942544/4411468910';
 
 // TODO: replace this test ad unit with your own ad unit.
 final adRewardedId = Platform.isAndroid
-    ? 'ca-app-pub-3940256099942544/5224354917'
+    // ? 'ca-app-pub-3940256099942544/5224354917'  //PRUEBAS
+    ? 'ca-app-pub-5396621013512775/1479491875'
     : 'ca-app-pub-3940256099942544/1712485313';
 
 // TODO: replace this test ad unit with your own ad unit.
 final rewardedInterstitialId = Platform.isAndroid
-    ? 'ca-app-pub-3940256099942544/5354046379'
+    ? 'ca-app-pub-5396621013512775/2141836852'
     : 'ca-app-pub-3940256099942544/6978759866';
 
 class AdmobPlugin {

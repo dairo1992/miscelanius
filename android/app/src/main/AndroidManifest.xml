@@ -24,7 +24,7 @@
   <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
   <meta-data
   android:name="com.google.android.gms.ads.APPLICATION_ID"
-  android:value="ca-app-pub-2524336339004626~4242914290"/>
+  android:value="ca-app-pub-5396621013512775~8563939935"/>
   <!-- GOOGLE MAPS -->
   <meta-data android:name="com.google.android.geo.API_KEY"
                android:value="AIzaSyBNJd0HVwjXeN5knTyoLiopp4ro-cO4WcU"/>
