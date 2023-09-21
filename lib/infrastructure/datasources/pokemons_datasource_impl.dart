@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:miscelanius/config/infrastructure/mappers/pokemon_mapper.dart';
+import 'package:miscelanius/infrastructure/mappers/pokemon_mapper.dart';
 import 'package:miscelanius/domain/domain.dart';
 
 class PokemonDataSourceImpl implements PokemonDataSource {

@@ -10,7 +10,7 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, ref) {
-    final adBannerAsync = ref.watch(adBannerProvider);
+     final adBannerAsync = ref.watch( adBannerProvider );
     return Scaffold(
       body: Column(
         children: [
@@ -32,18 +32,16 @@ class HomeScreen extends ConsumerWidget {
               ),
             ),
           ),
+          // Ad Banner
           adBannerAsync.when(
-              data: (bannerAd) => SizedBox(
-                width: bannerAd.size.width.toDouble(),
-                height: bannerAd.size.height.toDouble(),
-                child: AdWidget(ad: bannerAd),
-              ),
-              error: (_, __) => const Center(
-                    child: SizedBox(),
-                  ),
-              loading: () => const Center(
-                    child: CircularProgressIndicator.adaptive(),
-                  )),
+            data: (bannerAd) => SizedBox(
+              width: bannerAd.size.width.toDouble(),
+              height: bannerAd.size.height.toDouble(),
+              child: AdWidget(ad: bannerAd),
+            ),
+            error: (_, __) => const SizedBox(),
+            loading: () => const SizedBox(),
+          ),
         ],
       ),
     );

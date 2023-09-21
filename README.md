@@ -16,3 +16,5 @@ SHA1: C1:A8:BC:DA:CE:AC:78:E5:B8:39:D0:75:B7:C7:96:2D:13:94:07:FF
 SHA-256: 1B:DD:8D:79:60:D7:5D:7C:B9:C8:1E:A9:8D:13:05:61:11:8F:2B:BD:25:EB:C7:15:77:AF:45:49:E5:ED:3F:BE
 Valid until: jueves, 23 de noviembre de 2051 
 
+## generador de codigo isa
+flutter pub run build_runner build

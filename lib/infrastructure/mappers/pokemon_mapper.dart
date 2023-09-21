@@ -1,4 +1,4 @@
-import 'package:miscelanius/config/infrastructure/models/pokemonResponse.dart';
+import 'package:miscelanius/infrastructure/models/pokemonResponse.dart';
 import 'package:miscelanius/domain/domain.dart';
 
 class PokemonMapper {

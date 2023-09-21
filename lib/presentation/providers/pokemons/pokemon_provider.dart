@@ -1,5 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:miscelanius/config/infrastructure/repositories/pokemons_reotory_imp.dart';
+import 'package:miscelanius/infrastructure/repositories/pokemons_reotory_imp.dart';
 import 'package:miscelanius/domain/domain.dart';
 
 final pokemonRepositoryProvider = Provider<PokemonRepository>((ref) {

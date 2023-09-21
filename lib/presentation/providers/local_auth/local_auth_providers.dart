@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:miscelanius/presentation/config.dart';
+import 'package:miscelanius/config/config.dart';
 
 final canCheckBiometricProvider = FutureProvider<bool>((ref) async {
   return await LocalAuthPlugin.canCheckBiometric();

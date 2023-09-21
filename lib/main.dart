@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:miscelanius/presentation/config.dart';
+import 'package:miscelanius/config/config.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
+import 'package:workmanager/workmanager.dart';
 // import 'package:wakelock/wakelock.dart';
 
 import 'presentation/providers/providers.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await AdsModPlugin.initialize();
+  await AdmobPlugin.initialize();
   QuickActionsPlugins.registrarActions();
+  Workmanager().initialize(
+      callbackDispatcher, // The top level function, aka callbackDispatcher
+      isInDebugMode:
+          true // If enabled it will post a notification whenever the task is running. Handy for debugging tasks
+      );
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const ProviderScope(
     child: MainApp(),

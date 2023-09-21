@@ -32,6 +32,9 @@ final router = GoRouter(routes: [
             })
       ]),
   GoRoute(
+      path: '/Db-pokemons',
+      builder: (context, state) => const DbPokemonsScreen()),
+  GoRoute(
       path: '/Biometricos',
       builder: (context, state) => const BiometricScreen()),
   GoRoute(
@@ -52,4 +55,7 @@ final router = GoRouter(routes: [
   GoRoute(
       path: '/ad-rewarded',
       builder: (context, state) => const AdRewardedScreen()),
+  GoRoute(
+      path: '/ad-intersticial-recompensado',
+      builder: (context, state) => const AdIntersticialcreen()),
 ]);

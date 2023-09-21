@@ -1,4 +1,4 @@
-import 'package:miscelanius/config/infrastructure/datasources/pokemons_datasource_impl.dart';
+import 'package:miscelanius/infrastructure/datasources/pokemons_datasource_impl.dart';
 import 'package:miscelanius/domain/domain.dart';
 
 class PokemonRepositoryImpl implements PokemonRepository {

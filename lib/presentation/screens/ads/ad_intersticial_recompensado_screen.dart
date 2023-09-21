@@ -2,18 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:miscelanius/presentation/providers/providers.dart';
 
-class AdFullScreen extends ConsumerWidget {
-  const AdFullScreen({super.key});
+class AdIntersticialcreen extends ConsumerWidget {
+  const AdIntersticialcreen({super.key});
 
   @override
   Widget build(BuildContext context, ref) {
-    final adInterstitialAsync = ref.watch(interstitialAdProvider);
-    ref.listen(interstitialAdProvider, (previous, next) {
+    final rewardedInterstitialAsync = ref.watch(rewardedInterstitialAdProvider);
+    ref.listen(rewardedInterstitialAdProvider, (previous, next) {
       if (!next.hasValue) return;
       if (next.value == null) return;
-      next.value!.show();
+      next.value!.show(
+        onUserEarnedReward: (ad, reward) {
+          print("Puntos ganados: ${reward.amount}");
+        },
+      );
     });
-    if (adInterstitialAsync.isLoading) {
+    if (rewardedInterstitialAsync.isLoading) {
       return const Scaffold(
         body: Center(
           child: Text("Cargando anuncios"),
@@ -21,9 +25,7 @@ class AdFullScreen extends ConsumerWidget {
       );
     }
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Ad Full Screen"),
-      ),
+      appBar: AppBar(title: const Text("Ads Intersticial creen")),
       body: const Center(child: Text("Ya puedes continuar")),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:miscelanius/presentation/config.dart';
+import 'package:miscelanius/config/config.dart';
 import 'package:miscelanius/presentation/providers/providers.dart';
 
 class BadgeScreen extends ConsumerWidget {

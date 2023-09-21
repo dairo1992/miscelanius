@@ -16,6 +16,7 @@ final menuitems = <MenuItem>[
   MenuItem("Giroscopio Ball", Icons.sports_baseball_outlined, "/gyroscope-Ball"),
   MenuItem("Brujula", Icons.explore, "/compass"),
   MenuItem("Pokemon", Icons.catching_pokemon_outlined, "/pokemons"),
+  MenuItem("Backgound process", Icons.storage_rounded, "/Db-pokemons"),
   MenuItem("Biometricos", Icons.fingerprint_outlined, "/biometricos"),
   MenuItem("Ubicacion", Icons.pin_drop, "/Location"),
   MenuItem("Mapas", Icons.map_rounded, "/Maps"),
@@ -23,6 +24,7 @@ final menuitems = <MenuItem>[
   MenuItem("Bagde", Icons.notifications_active, "/badge"),
   MenuItem("AD full screen", Icons.ad_units_rounded, "/ad-full"),
   MenuItem("AD rewarded", Icons.adb, "/ad-rewarded"),
+  MenuItem("AD Intersticial Recompensado", Icons.check_box_outlined, "/ad-intersticial-recompensado"),
 ];
 
 class MainMenu extends StatelessWidget {
